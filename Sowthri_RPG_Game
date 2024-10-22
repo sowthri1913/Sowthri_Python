@@ -1,0 +1,47 @@
+#Rpg game
+import time
+print("Hi! Welcome to text RPG - Adventures of TechnoGuy")
+time.sleep(1)
+print(" ")
+print("You are a traveller. You have decided to rest in a cave for the night.\nAfter you slept,you are rudely awakened by a giant monster.")
+time.sleep(1)
+print("What will you do?")
+print("")
+print("1.Run Away from the cave \n2 Stand an fight by throwing a rock on its head")
+print("")
+time.sleep(1)
+choice1 = int(input("Enter your choice here :"))
+print("")
+if choice1 == 1:
+    print("You have made the right choice! You have run away from the cave, only to meet a vampire!")
+    print("")
+    time.sleep(1)
+    print("Now what do  you do? ")
+    print("")
+    print("1.Run away,though he is faster")
+    print("2.Take a magnifying glass and show it on  him")
+    print("")
+    choice2 = int(input("What do you do now? "))
+    print("")
+    if choice2 ==1:
+       print("Bye! The vampire has drunk your blood.")
+       print(" ")
+       print("                          You have died!")
+       exit()
+    else:
+       print("You used a magnifying glass to burn the vampire to death.")
+       time.sleep(1)
+       print("")
+       print("")
+       print("                             YOU WON!")
+       exit()
+
+
+
+
+
+else:
+    print("What a stupid choice! Throwing a rock on its head made it swallow you in one gulp!")
+    time.sleep(1)
+    print("                             YOU HAVE DIED!")
+    exit()
